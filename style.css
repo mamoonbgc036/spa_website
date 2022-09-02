@@ -1,0 +1,323 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*HEADER SOCIAL ICON*/
+
+header{
+	display: unset;
+}
+
+#social_icon{
+	    height: 35px;
+    background: #BA3E40;
+}
+
+.icon_wrapper{
+	height: 100%;
+    width: 90%;
+}
+
+.icon{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    float: right;
+}
+
+#social_icon a{
+	padding: 5px;
+	margin: 5px;
+	color: #2CC2D5;
+	font-size: 25px;
+}
+
+#social_icon a:hover{
+	color: #FFFFFF;
+}
+
+#header_menus{
+	display: flex;
+    height: 85px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#header_menus img{
+	width: 80px;
+}
+
+#logo{
+	width: 20%;
+    height: 100%;
+}
+
+#logo a{
+	display: flex;
+}
+
+#logo span, #search span{
+	margin: auto;
+    color: #BA3E40;
+    font-weight: 700;
+}
+
+#header_main_menus{
+	width: 60%;
+    margin: auto;
+}
+
+#header_main_menus ul{
+	display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+#header_main_menus ul li{
+	list-style: none;
+}
+
+#header_main_menus ul li a{
+	text-decoration: none;
+	font-weight: 700;
+	color: black;
+	opacity: .6;
+}
+
+#header_main_menus ul li a:hover{
+	 color: #BA3E40;
+	 opacity: 1;
+}
+
+#logo a{
+	text-decoration: none;
+	font-weight: 700;
+	color: #BA3E40;
+}
+
+#search{
+	width: 21%;
+    display: flex;
+}
+
+#search #right_icon{
+	display: flex;
+}
+
+#search_icon, #right_icon span{
+	margin: auto;
+}
+
+#search_icon i{
+	font-size: 30px;
+}
+
+.main_header{
+	top: 0;
+    background: #fff;
+    position: sticky;
+    z-index: 9;
+}
+
+/*CAROUSOL*/
+
+.carousel-item{
+	height: 550px;
+}
+
+.carousel-item img{
+	max-height: 100%;
+}
+
+
+/*BOOTSTRAP MULTI LEVEL SUB MENUS*/
+
+.dropbtn {
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content,.multi_content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+.multi_level:hover .multi_content{  display: inline-block; }
+.multi_level:hover .multi_btn{  display: inline-block; width: 160px; }
+
+/*SERVICE SECTION*/
+
+.services{
+	padding: 20px;
+	margin: 5px;
+	background: #F7F7F7;
+}
+
+.services .service_container{
+	display: flex;
+	justify-content: space-around;
+}
+
+.products_item p, .strength h3{
+	text-align: center;
+}
+
+/*PRODUCTS SECTION*/
+
+.products{
+	padding: 20px;
+	margin: 5px;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 285px;
+  height: 215px;
+  margin: 5px auto;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.products_desc h3,.products_desc p{
+	text-align: center;
+}
+
+.products_gallery{
+	display : grid;
+	grid-template-columns : repeat(auto-fit,minmax(250px,1fr));
+	width: 90%;
+	margin: 0 auto;
+}
+
+/*IMPRESSION*/
+
+
+.impression .item{
+	margin: 5px;
+	width: 115px;
+    height: 115px;
+    padding: 5px;
+}
+
+.impression .item_number{
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+}
+
+.item_number h4{
+	color: #fff;
+}
+
+.item p{
+	text-align: center;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.impression .impresstion_inner{
+	    display: flex;
+    justify-content: space-around;
+}
+
+/*FOOTER SECTION*/
+
+.main_footer_content{
+	padding: 15px;
+	margin: 5px;
+	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .footer_header{
+	display: flex;
+    justify-content: space-around;
+    background: #1D29A5;
+    align-items: center;
+    padding: 9px;
+}
+
+.footer_header #footer_text{
+	color: #fff;
+}
+
+.footer_header #footer_hover{
+	padding: 5px;
+	background: #fff;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#footer_hover i{
+	margin-right: 5px;
+}
+
+.footer_header #footer_hover:hover{
+	background: #282923;
+	color: #fff;
+}
+
+.company_name h5, .address h5{
+	background: #78BB7B;
+    display: inline-block;
+    padding: 8px;
+}
+
+.company_name h3{
+	    color: #BA3E40;
+    font-style: italic;
+}
+
+.address p{
+	font-weight: 600;
+    font-style: italic;
+}
+
+
+
+
